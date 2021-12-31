@@ -2,3 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply block
+    w-5/6
+    mx-auto
+    text-sm
+    font-semibold
+    text-white
+    px-8
+    py-4
+    rounded-3xl
+    shadow-xl
+    mt-8;
+  }
+  .btn-secondary {
+    @apply block w-5/6 mx-auto text-sm font-semibold text-white
+    px-8
+    py-4
+    rounded-3xl
+    shadow-xl
+    mt-4
+    mb-20;
+  }
+  .headline {
+    @apply text-2xl font-semibold text-center;
+  }
+  .subtitle {
+    @apply text-lg font-semibold text-center;
+  }
+  .plain-text {
+    @apply text-sm text-center text-darkGrayishBlue;
+  }
+  .quote {
+    @apply text-sm text-center mb-10 text-darkGrayishBlue;
+  }
+  .image-format {
+    @apply block w-2/5 mx-4 my-10;
+  }
+}
