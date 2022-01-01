@@ -27,7 +27,7 @@
     cursor-pointer;
   }
   .title {
-    @apply text-2xl font-semibold text-center lg:text-6xl;
+    @apply text-2xl font-semibold text-center lg:text-6xl sm:text-4xl;
   }
   .headline {
     @apply text-2xl font-semibold text-center lg:text-5xl;

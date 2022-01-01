@@ -15,7 +15,8 @@ module.exports = {
         grayishBlue: "hsl(201, 11%, 66%)",
       },
       backgroundImage: {
-        "hero-pattern": "url('/images/bg-header-mobile.png')",
+        "hero-pattern-mobile": "url('/images/bg-header-mobile.png')",
+        "hero-pattern-desktp": "url('/images/bg-header-desktop.png')",
       },
     },
   },
