@@ -11,7 +11,7 @@
     text-white
     px-8
     py-4 lg:py-5
-    rounded-3xl
+    rounded-full
     shadow-xl
     mt-8
     cursor-pointer;
@@ -20,7 +20,7 @@
     @apply w-5/6 mx-auto text-sm font-semibold text-white
     px-8
     py-4 lg:py-5
-    rounded-3xl
+    rounded-full
     shadow-xl
     mt-4
     mb-20
@@ -33,13 +33,13 @@
     @apply text-2xl font-semibold text-center lg:text-5xl;
   }
   .subtitle {
-    @apply text-lg font-semibold text-center  lg:text-left lg:text-3xl;
+    @apply text-lg font-semibold text-center  lg:text-left lg:text-xl;
   }
   .plain-text {
     @apply text-sm text-center text-darkGrayishBlue lg:text-2xl;
   }
   .quote {
-    @apply text-sm text-center mb-10 text-darkGrayishBlue  lg:text-left lg:text-xl lg:mt-6;
+    @apply text-sm text-center mb-10 text-darkGrayishBlue  lg:text-left lg:text-base lg:mt-2;
   }
   .image-format {
     @apply w-2/5 mx-4 my-10;
