@@ -22,34 +22,39 @@
     ></script>
   </head>
   <body id="app" class="font-bai text-project">
-    <div class="py-16 px-14 bg-hero-pattern bg-no-repeat">
-      <section>
+    <div class="py-16 px-14 bg-hero-pattern bg-no-repeat lg:bg-contain">
+      <section class="lg:text-center">
         <div class="text-8xl text-strongCyan text-center my-16">
           <i class="far fa-copyright"></i>
         </div>
-        <h1 class="headline">
-          A history of<br />
-          everything you copy
-        </h1>
+        <h1 class="title">A history of everything you copy</h1>
 
-        <p class="plain-text my-8">
+        <p class="plain-text my-8 lg:text-2xl lg:mx-72">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
         <button
           class="
+            block
+            lg:w-1/6 lg:inline
             btn-primary
             bg-strongCyan bg-opacity-95
-            border-x-4 border-x-strongCyan
+            border-x-4
+            lg:mx-2
+            border-x-strongCyan
           "
         >
           Download for iOS
         </button>
         <button
           class="
+            block
+            lg:w-1/6 lg:inline
             btn-secondary
             bg-lightBlue bg-opacity-95
-            border-x-4 border-x-lightBlue
+            border-x-4
+            lg:mx-2
+            border-x-lightBlue
           "
         >
           Download for Mac
@@ -58,40 +63,51 @@
       <section>
         <h2 class="headline mb-8">Keep track of your snippets</h2>
 
-        <p class="plain-text my-8">
+        <p class="plain-text my-8 lg:mx-72 lg:text-xl">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <img class="my-12" src="./images/image-computer.png" alt="" />
-        <h3 class="subtitle">Quick Search</h3>
 
-        <p class="quote">
-          Easily search your snippets by content, category, web address,
-          application, and more.
-        </p>
-
-        <h3 class="subtitle">iCloud Sync</h3>
-
-        <p class="quote">
-          Instantly saves and syncs snippets across all your devices.
-        </p>
-
-        <h3 class="subtitle">Complete History</h3>
-
-        <p class="text-sm text-center mb-24 text-darkGrayishBlue">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
+        <div class="lg:flex lg:flex-nowrap lg:items-center">
+          <div class="lg:mx-16">
+            <img
+              class="my-12 lg:my-24"
+              src="./images/image-computer.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:mx-20">
+            <h3 class="subtitle">Quick Search</h3>
+            <p class="quote">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+            <h3 class="subtitle">iCloud Sync</h3>
+            <p class="quote">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+            <h3 class="subtitle">Complete History</h3>
+            <p class="quote">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
       </section>
       <section>
         <h2 class="headline mb-8">Access Clipboard anywhere</h2>
 
-        <p class="quote">
+        <p class="quote lg:text-center">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
 
-        <img class="my-12" src="./images/image-devices.png" alt="" />
+        <img
+          class="my-12 lg:my-32 lg:mx-auto"
+          src="./images/image-devices.png"
+          alt=""
+        />
       </section>
       <section>
         <h2 class="headline mb-8">Supercharge your workflow</h2>
@@ -100,84 +116,133 @@
           We’ve got the tools to boost your productivity.
         </p>
 
-        <img class="mx-auto my-12" src="./images/icon-blacklist.svg" alt="" />
-        <h3 class="text-lg font-semibold text-center">Create blacklists</h3>
-
-        <p class="plain-text">
-          Ensure sensitive information never makes its way to your clipboard by
-          excluding certain sources.
-        </p>
-
-        <img class="mx-auto my-12" src="./images/icon-text.svg" alt="" />
-        <h3 class="subtitle">Plain text snippets</h3>
-        <p class="plain-text">
-          Remove unwanted formatting from copied text for a consistent look.
-        </p>
-        <img class="mx-auto my-12" src="./images/icon-preview.svg" alt="" />
-        <h3 class="subtitle">Sneak preview</h3>
-        <p class="plain-text">
-          Quick preview of all snippets on your Clipboard for easy access.
-        </p>
+        <div class="lg:flex lg:flex-nowrap lg:gap-16">
+          <div class="lg:flex justify-center items-center flex-wrap flex-1">
+            <img
+              class="mx-auto my-12"
+              src="./images/icon-blacklist.svg"
+              alt=""
+            />
+            <h3 class="subtitle lg:text-center lg:w-full">Create blacklists</h3>
+            <p class="plain-text lg:text-lg">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+          <div class="lg:flex justify-center items-start flex-wrap flex-1">
+            <img class="mx-auto my-12" src="./images/icon-text.svg" alt="" />
+            <h3 class="subtitle lg:text-center lg:w-full">
+              Plain text snippets
+            </h3>
+            <p class="plain-text lg:text-lg">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <div class="lg:flex justify-center items-center flex-wrap flex-1">
+            <img class="mx-auto my-12" src="./images/icon-preview.svg" alt="" />
+            <h3 class="subtitle lg:text-center lg:w-full">Sneak preview</h3>
+            <p class="plain-text lg:text-lg">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
       </section>
       <section>
-        <div class="flex justify-center items-center flex-wrap">
+        <div
+          class="
+            flex
+            justify-center
+            items-center
+            flex-wrap
+            lg:flex-nowrap lg:my-20
+          "
+        >
           <img
-            class="image-format mt-20"
+            class="image-format mt-20 lg:w-1/12 lg:align-middle"
             src="./images/logo-google.png"
             alt=""
           />
-          <img class="image-format" src="./images/logo-ibm.png" alt="" />
-          <img class="image-format" src="./images/logo-microsoft.png" alt="" />
-          <img class="image-format" src="./images/logo-hp.png" alt="" />
           <img
-            class="image-format mb-20"
+            class="image-format lg:w-1/12"
+            src="./images/logo-ibm.png"
+            alt=""
+          />
+          <img
+            class="image-format lg:w-1/12"
+            src="./images/logo-microsoft.png"
+            alt=""
+          />
+          <img
+            class="image-format lg:w-1/12"
+            src="./images/logo-hp.png"
+            alt=""
+          />
+          <img
+            class="image-format mb-20 lg:w-1/12"
             src="./images/logo-vector-graphics.png"
             alt=""
           />
         </div>
       </section>
-      <section>
+      <section class="lg:text-center">
         <h2 class="headline mb-8">Clipboard for iOS and Mac OS</h2>
-        <p class="plain-text">
+        <p class="plain-text lg:mx-72">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
 
         <button
           class="
+            block
+            lg:w-1/6 lg:inline
             btn-primary
             bg-strongCyan bg-opacity-95
-            border-x-4 border-x-strongCyan
+            border-x-4
+            lg:mx-2
+            border-x-strongCyan
           "
         >
           Download for iOS
         </button>
         <button
           class="
+            block
+            lg:w-1/6 lg:inline
             btn-secondary
             bg-lightBlue bg-opacity-95
-            border-x-4 border-x-lightBlue
+            border-x-4
+            lg:mx-2
+            border-x-lightBlue
           "
         >
           Download for Mac
         </button>
       </section>
 
-      <footer class="text-center bg-grayishBlue bg-opacity-40">
-        <div class="text-6xl text-strongCyan text-center pt-6 pb-4">
+      <footer
+        class="
+          text-center
+          bg-grayishBlue bg-opacity-40
+          lg:flex
+          justify-evenly
+          items-center
+          flex-nowrap
+        "
+      >
+        <div class="text-6xl text-strongCyan text-center pt-6 pb-4 lg:mx-20">
           <i class="far fa-copyright"></i>
         </div>
-        <ul class="text-sm font-medium">
-          <li class="py-2">FAQs</li>
-          <li class="py-2">Contact Us</li>
-          <li class="py-2">Privacy Policy</li>
-          <li class="py-2">Press Kit</li>
-          <li class="py-2">Install Guide</li>
+        <ul class="text-sm font-medium lg:grid lg:grid-cols-3 lg:grid-rows-2">
+          <li class="options lg:col-start-1 row-start-1">FAQs</li>
+          <li class="options lg:col-start-1 row-start-2">Contact Us</li>
+          <li class="options lg:col-start-2 row-start-1">Privacy Policy</li>
+          <li class="options lg:col-start-2 row-start-2">Press Kit</li>
+          <li class="options lg:col-start-3 row-start-1">Install Guide</li>
         </ul>
-        <div class="flex justify-center py-8">
+        <div class="flex justify-center py-8 lg:px-20">
           <div class="px-4">
             <svg
-              class="fill-gray-800"
+              class="social-icons"
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +255,7 @@
           </div>
           <div class="px-4">
             <svg
-              class="fill-gray-800"
+              class="social-icons"
               width="24"
               height="20"
               xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +268,7 @@
           </div>
           <div class="px-4">
             <svg
-              class="fill-gray-800"
+              class="social-icons"
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
